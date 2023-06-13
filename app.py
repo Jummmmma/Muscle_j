@@ -4,9 +4,7 @@ import datetime
 
 app = Flask(__name__)
 app.secret_key = 'abcdefghijklmn'
-
-# DBのURI
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///muscle.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///muscle.db"
 # おまじない
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
